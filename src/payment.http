@@ -1,0 +1,14 @@
+# CREATE PAYMENT
+POST http://localhost:3100/payments/create
+Content-Type: application/json
+
+{
+  "total": 100,
+  "card_brand": "VISA",
+  "card_number": "tok_visa",
+  "card_holder": "Payment for order #123",
+  "card_expiration": "12/2030",
+  "card_cvv": "123",
+  "foreign_transaction_id": "12"
+}
+ 
